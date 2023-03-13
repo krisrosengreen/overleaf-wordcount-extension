@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "overleaf wordcount",
+  "version": "1.0",
+  "permissions": [
+      "activeTab"
+    ],
+  "description": "View files",
+  "content_scripts": [
+    {
+      "matches" : ["*://www.overleaf.com/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+}
+
